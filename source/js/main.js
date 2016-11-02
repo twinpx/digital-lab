@@ -1,1 +1,1 @@
-    console.log( 'main script' );
+$( ".b-header__menu-icon" ).sideNav();

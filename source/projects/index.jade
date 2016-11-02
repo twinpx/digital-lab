@@ -1,0 +1,44 @@
+﻿extends ../layouts/inside.jade
+
+block title
+  title News | digital-lab
+
+block content
+
+  .container
+  
+    h1.center-align Проекты
+    p.center-align Наши проекты, наша гордость.
+    
+    hr.i-size-L
+    
+    .b-projects-list
+      .row
+        .col.m6.s12.center-align
+          a( href="/projects/project/" )
+            .valign-wrapper
+              .valign Телепередача<br>«Жди меня,<br>я не вернусь»
+            img.img-responsive( src="/upload/projects/1.jpg"  alt="" )
+        hr.hide-on-med-and-up.clearfix
+        .col.m6.s12.center-align
+          a( href="/projects/project/" )
+            .valign-wrapper
+              .valign Телешоу «Дискотека»
+            img.img-responsive( src="/upload/projects/2.jpg"  alt="" )
+      hr.hide-on-med-and-up.clearfix
+      .row
+        .col.m6.s12.center-align
+          a( href="/projects/project/" )
+            .valign-wrapper
+              .valign Программа новостей<br>«Час забытия»
+            img.img-responsive( src="/upload/projects/3.jpg"  alt="" )
+        hr.hide-on-med-and-up.clearfix
+        .col.m6.s12.center-align
+          a( href="/projects/project/" )
+            .valign-wrapper
+              .valign Звуковая дорожка
+            img.img-responsive( src="/upload/projects/4.jpg"  alt="" )
+          
+    include ../modules/paginator/include
+    
+    hr.i-size-L

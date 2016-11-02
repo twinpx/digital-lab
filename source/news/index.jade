@@ -1,0 +1,81 @@
+﻿extends ../layouts/inside.jade
+
+block title
+  title News | digital-lab
+
+block content
+
+  .container
+  
+    h1.center-align Новости
+    p.center-align Все что вы хотели знать о новостях нашей компании, но боялись спросить.
+    
+    hr.i-line
+    
+    .b-news-list
+      .row
+        .col.m2.s12
+          a( href="/news/news/" )
+            img.img-responsive( src="/upload/news/1.jpg"  alt="" )
+        hr.hide-on-med-and-up.clearfix
+        .col.m7.offset-m1.s12
+          h2
+            a( href="/news/news/" ) В Москве снизят налог на апартаменты
+          p Цифровая технология полного цикла от приема контента до выпуска в готовых плей-листов в эфирный комплекс
+        .col.m1.offset-m1.s12.right-align.text-small
+          .text-xlarge 14
+          div января
+          div 2017
+      
+      hr.i-line
+      
+      .row
+        .col.m2.s12
+          a( href="/news/news/" )
+            img.img-responsive( src="/upload/news/2.jpg"  alt="" )
+        hr.hide-on-med-and-up.clearfix
+        .col.m7.offset-m1.s12
+          h2
+            a( href="/news/news/" ) Барак Обама выступил на Генассамблее ООН
+          p Он начал речь с заявления о том, что устоявшийся мировой порядок – несовершенен.
+        .col.m1.offset-m1.s12.right-align.text-small
+          .text-xlarge 10
+          div ноября
+          div 2016
+      
+      hr.i-line
+      
+      .row
+        .col.m2.s12
+          a( href="/news/news/" )
+            img.img-responsive( src="/upload/news/3.jpg"  alt="" )
+        hr.hide-on-med-and-up.clearfix
+        .col.m7.offset-m1.s12
+          h2
+            a( href="/news/news/" ) Россия и Вьетнам хотят расширить использование нацвалют в торговле
+        .col.m1.offset-m1.s12.right-align.text-small
+          .text-xlarge 9
+          div сентября
+          div 2016
+      
+      hr.i-line
+      
+      .row
+        .col.m2.s12
+          a( href="/news/news/" )
+            img.img-responsive( src="/upload/news/4.jpg"  alt="" )
+        hr.hide-on-med-and-up.clearfix
+        .col.m7.offset-m1.s12
+          h2
+            a( href="/news/news/" ) Аналитики подсчитали себестоимость iPhone 7
+        .col.m1.offset-m1.s12.right-align.text-small
+          .text-xlarge 14
+          div января
+          div 2017
+          
+      hr.i-line
+      
+      include ../modules/paginator/include
+    
+    hr.i-size-XL
+

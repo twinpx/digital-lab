@@ -4,81 +4,93 @@ block title
   title Main page | digital-lab
 
 block content
-  section.b-section.i-blue
-    img.b-logo( src="/template/images/digital-lab-logo.png" width="221" height="46" alt="Digital Lab")
     
-  section.b-section.valign-wrapper
-    .container.valign
-      .row
-        .col.s8.offset-s2.center-align
-          h1 Digital Lab
-          p.text-large Digital Lab эксклюзивным дистрибутором 14тематических телеканалов форматов SD и HD, 17 из которых собственного производства. Телеканалы «Digital LAB» являются неоднократными лауреатами профессиональных российских и международных премий и обеспечивают потребности зрительской аудитории во всех основных телевизионных жанрах.
+    section.b-section.i-blue
+
+      include ./layouts/includes/header.jade
+      
+      img.b-logo( src="/template/images/digital-lab-logo.png" width="221" height="46" alt="Digital Lab")
+      
+    .b-container
+      
+      section.b-section.valign-wrapper
+        .container.valign
+          .row
+            .col.s8.offset-s2.center-align
+              h1 Digital Lab
+              p.text-large Digital Lab эксклюзивным дистрибутором 14тематических телеканалов форматов SD и HD, 17 из которых собственного производства. Телеканалы «Digital LAB» являются неоднократными лауреатами профессиональных российских и международных премий и обеспечивают потребности зрительской аудитории во всех основных телевизионных жанрах.
+              
+      section.center-align.i-blue
+        img( src="/template/images/ill1.jpg" width="1200" height="439" alt="" ).img-responsive
+        
+      hr.i-size-L
+        
+      section
+        .container
+          h2.center-align Наши клиенты
+          hr.i-size-L
+          .row
+            .col.m2.s6.center-align
+              a( href="" target="_blank" )
+                img( src="/template/images/client1.jpg" alt="" ).img-responsive
+            .col.m2.s6.center-align
+              a( href="" target="_blank" )
+                img( src="/template/images/client2.jpg" alt="" ).img-responsive
+            hr.hide-on-med-and-up.clearfix
+            .col.m2.s6.center-align
+              a( href="" target="_blank" )
+                img( src="/template/images/client3.jpg" alt="" ).img-responsive
+            .col.m2.s6.center-align
+              a( href="" target="_blank" )
+                img( src="/template/images/client4.jpg" alt="" ).img-responsive
+            hr.hide-on-med-and-up.clearfix
+            .col.m2.s6.center-align
+              a( href="" target="_blank" )
+                img( src="/template/images/client5.jpg" alt="" ).img-responsive
+            .col.m2.s6.center-align
+              a( href="" target="_blank" )
+                img( src="/template/images/client6.jpg" alt="" ).img-responsive
+                
+          hr.i-size-XL
           
-  section.center-align.i-blue
-    img( src="/template/images/ill1.jpg" width="1200" height="439" alt="" ).img-responsive
-    
-  hr.i-size-S
-    
-  section
-    .container
-      h2.center-align Наши клиенты
-      .row
-        .col.s2.center-align
-          a( href="" target="_blank" )
-            img( src="/template/images/client1.jpg" alt="" ).img-responsive
-        .col.s2.center-align
-          a( href="" target="_blank" )
-            img( src="/template/images/client2.jpg" alt="" ).img-responsive
-        .col.s2.center-align
-          a( href="" target="_blank" )
-            img( src="/template/images/client3.jpg" alt="" ).img-responsive
-        .col.s2.center-align
-          a( href="" target="_blank" )
-            img( src="/template/images/client4.jpg" alt="" ).img-responsive
-        .col.s2.center-align
-          a( href="" target="_blank" )
-            img( src="/template/images/client5.jpg" alt="" ).img-responsive
-        .col.s2.center-align
-          a( href="" target="_blank" )
-            img( src="/template/images/client6.jpg" alt="" ).img-responsive
-            
-      hr
-      
-      .row
-        .col.s6
-          img( src="/template/images/ill2.jpg" alt="" ).img-responsive
-        .col.s5.offset-s1
-          h2 Предэфирная подготовка
-          ul.browser-default
-            li Цифровая технология полного цикла от приема контента до выпуска в готовых плей-листов в эфирный комплекс
-            li Подготовка эфирного продукта в актуальных стандартах качества вещания
-            li Импорт/экспорт всех популярных форматов аудио/видеоконтента
-            li Архивирование контента с надежным резервированием
-            li Полная интеграция системы управления медиа-активами (MAM) и системами трафика (планирование, рекламное сопровождение)
-            li Цифровая технология полного цикла от приема контента до выпуска в готовых плей-листов в эфирный комплекс.
-            
-      hr
-      
-      .row
-        .col.s6.push-s5.offset-s1
-          img( src="/template/images/ill3.jpg" alt="" ).img-responsive
-        .col.s5.pull-s7
-          h2 Подготовка эфирного продукта
-          ul.browser-default
-            li Импорт/экспорт всех популярных форматов аудио/видеоконтента
-            li Архивирование контента с надежным резервированием
-            li Полная интеграция системы управления медиа-активами (MAM) и системами трафика (планирование, рекламное сопровождение)
-            
-      hr
-      
-      .row
-        .col.s6
-          img( src="/template/images/ill4.jpg" alt="" ).img-responsive
-        .col.s5.offset-s1
-          h2 Производство промо
-          p Наша Служба промотирования осуществит разработку промо-кампаний эфирных и неэфирных событий для Ваших телеканалах, в том числе производство промороликов, кросс-промо, управляющих бамперов,графических элементов оформления эфира.
-          p Разработаем для Вас визуально-стилистическое решение
-          оформления промо-кампаний, а также оформления эфира в целом.
+          .row
+            .col.m6.s12
+              img( src="/template/images/ill2.jpg" alt="" ).img-responsive
+            hr.hide-on-med-and-up.clearfix
+            .col.m5.offset-m1.s12
+              h2 Предэфирная подготовка
+              ul.browser-default
+                li Цифровая технология полного цикла от приема контента до выпуска в готовых плей-листов в эфирный комплекс
+                li Подготовка эфирного продукта в актуальных стандартах качества вещания
+                li Импорт/экспорт всех популярных форматов аудио/видеоконтента
+                li Архивирование контента с надежным резервированием
+                li Полная интеграция системы управления медиа-активами (MAM) и системами трафика (планирование, рекламное сопровождение)
+                li Цифровая технология полного цикла от приема контента до выпуска в готовых плей-листов в эфирный комплекс.
+                
+          hr.i-size-XL
           
-      hr
-    
+          .row
+            .col.m6.push-m5.offset-m1.s12.right-align
+              img( src="/template/images/ill3.jpg" alt="" ).img-responsive
+            hr.hide-on-med-and-up.clearfix
+            .col.m5.pull-m7.s12
+              h2 Подготовка эфирного продукта
+              ul.browser-default
+                li Импорт/экспорт всех популярных форматов аудио/видеоконтента
+                li Архивирование контента с надежным резервированием
+                li Полная интеграция системы управления медиа-активами (MAM) и системами трафика (планирование, рекламное сопровождение)
+                
+          hr.i-size-XL
+          
+          .row
+            .col.m6.s12
+              img( src="/template/images/ill4.jpg" alt="" ).img-responsive
+            hr.hide-on-med-and-up.clearfix
+            .col.m5.offset-m1.s12
+              h2 Производство промо
+              p Наша Служба промотирования осуществит разработку промо-кампаний эфирных и неэфирных событий для Ваших телеканалах, в том числе производство промороликов, кросс-промо, управляющих бамперов,графических элементов оформления эфира.
+              p Разработаем для Вас визуально-стилистическое решение
+              оформления промо-кампаний, а также оформления эфира в целом.
+              
+          hr.i-size-XL
+        
