@@ -1,4 +1,4 @@
-html
+﻿html
   position relative
   min-height 100%
   line-height 1.7
@@ -70,10 +70,19 @@ h2
     margin-top 0
     
 ul.browser-default
-  margin-left 22px
+  margin-left 40px
   
   li
     margin-bottom 17px
+    list-style-type none
+    position relative
+    
+    &:before
+      content '—'
+      display block
+      position absolute
+      top -1px
+      left -40px
   
 .text-small
   font-size 10.5pt
