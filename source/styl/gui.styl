@@ -22,6 +22,47 @@ section.i-blue
   left 50%
   margin -23px 0 0 -110px
   
+.b-text-animation
+  position absolute
+  top 50%
+  left 50%
+  margin 130px 0 0 -205px  
+  font-size 22pt
+  font-weight 100
+  color #fff
+  text-align center
+  width 410px
+  height 160px
+  overflow hidden
+  line-height 40px
+  
+  @media ( max-width 767px )
+    font-size 18pt
+  
+  &__visible
+    height 40px
+    overflow hidden
+    
+  ul
+    animation change 6s infinite
+    padding 0
+    margin 0
+    
+  li
+    line-height 40px
+    margin 0
+    padding 0
+    list-style-type none
+    
+@keyframes change {
+  0%, 12%, 100% {transform:translateY(0);}
+  17%,29% {transform:translateY(-25%);}
+  34%,46% {transform:translateY(-50%);}
+  51%,63% {transform:translateY(-75%);}
+  68%,80% {transform:translateY(-50%);}
+  85%,97% {transform:translateY(-25%);}
+}
+  
 a
   color #1555a3
   
